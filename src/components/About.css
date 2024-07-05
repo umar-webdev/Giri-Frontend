@@ -1,0 +1,107 @@
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 700px;
+}
+
+.section-padding {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.featured {
+  background: var(--section-bg-color);
+}
+
+/*---------------------------------------
+  ABOUT               
+-----------------------------------------*/
+.about .nav-pills .nav-item {
+  width: 100%;
+}
+
+.about .nav-pills .nav-link {
+  color: var(--grey-color);
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  border-left: 1px solid var(--grey-color);
+  border-radius: 0;
+  padding-right: 0;
+}
+
+.about .nav-pills .nav-link:hover,
+.about .nav-pills .nav-link.active, 
+.about .nav-pills .show>.nav-link {
+  background: transparent;
+  border-left-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+
+/* Responsive Styles */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .about .nav-pills .nav-link {
+    font-size: 16px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .about .nav-pills .nav-link {
+    font-size: 14px;
+  }
+}
+
+.about{
+  /* font-family: 'Public Sans', 'sans-serif'; */
+}
+
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.learn-more-button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 800px) {
+  .product-block .portfoliolist .label h6 {
+    font-size: 14px; /* Adjust the font size of the product name */
+  }
+
+  .product-block .portfoliolist .label .learn-more-button {
+    padding: 8px 12px; /* Adjust padding for smaller button size */
+    font-size: 14px; /* Adjust font size for smaller button text */
+  }
+}
+
+/* @media only screen and (min-width: 580px) {
+  .product-block .portfoliolist .label h6 {
+    font-size: 12px; 
+  } */
+
+  /* .product-block .portfoliolist .label .learn-more-button {
+    padding: 6px 10px; 
+    font-size: 12px;}
+} */

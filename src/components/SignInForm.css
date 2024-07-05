@@ -1,0 +1,52 @@
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 2%;
+  }
+  
+  .learn-more-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    color: white;
+  }
+
+
+
+  /* SignInForm.css */
+
+/* Style for Form Label */
+.form-label {
+    color: #000000; /* White color for form labels */
+  }
+  
+  /* Style for Form Control (textboxes) */
+  .form-control {
+    background-color: #ffffff; /* Black background color for textboxes */
+    border: 2px solid #000000; /* Dark black border for textboxes */
+    color: #000000; /* White color for text in textboxes */
+  }
+  
+  /* Style for the horizontal line below the Sign In button */
+  .hr-line {
+    border-top: 1px solid #000000; /* Dark black color for the horizontal line */
+  }
+  
+  /* Style for the Forgot Password? and Create New Account links */
+  .forgot-password-link,
+  .create-account-link {
+    color: #000000; /* Dark black color for the links */
+    text-decoration: none; /* Remove underline from the links */
+    font-weight: bold; /* Make the links bold */
+  }
+  
+  /* Hover effect for the links */
+  .forgot-password-link:hover,
+  .create-account-link:hover {
+    text-decoration: underline; /* Underline the links on hover */
+  }
+  

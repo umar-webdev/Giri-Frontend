@@ -1,0 +1,173 @@
+/* ReviewSlider.css */
+
+:root {
+    --primary: rgb(0, 0, 0);
+    --btn: rgba(0, 0, 0, 0.15);
+  }
+  
+  .review-slider-container {
+    background-color: lightgrey;
+    color: black;
+    /* padding: 2rem; */
+    margin: 2%;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    flex-direction: column; /* Set flex-direction to column for smaller screens */
+  }
+  
+  .testimonial-content {
+    flex: 1;
+    max-width: 80%;
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .testslider {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .testitem {
+    display: none;
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .testitem.active {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .testimonial {
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimage {
+    width: 100%;
+    max-width: 200px; /* Adjust image width */
+    height: 200px; /* Set a fixed height to make it a square */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  @media (max-width: 768px) {
+    .testimage {
+      max-width: 100px;
+      margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+    }
+  }
+  
+  .testbtn {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+    margin: 0 0.1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .testbtn:hover {
+    background-color: green;
+  }
+  
+  .expand {
+    width: 1.75rem;
+  }
+  
+
+  @media (max-width: 950px) {
+    .testimonial-container {
+      flex-direction: column; /* Set flex-direction to column for devices below 950px */
+    }
+  
+    .testimonial-content {
+      max-width: 100%; /* Full width for smaller screens */
+    }
+  }
+
+  @media (max-width: 950px) {
+    .testimonial-container {
+      flex-direction: column; /* Set flex-direction to column for devices below 950px */
+    }
+  
+    .testimonial-content {
+      max-width: 100%; /* Full width for screens below 950px */
+    }
+  }
+  
+@media (max-width: 580px) {
+    .testimonial-container {
+      flex-direction: column; /* Set flex-direction to column for devices below 580px */
+    }
+  
+    .testimage {
+      max-width: 100%; /* Adjust image size to full width for screens below 580px */
+    }
+  
+    .testimonial-content {
+      max-width: 100%; /* Full width for screens below 580px */
+      font-size: 1rem; /* Adjust content font size for smaller screens */
+    }
+  }
+
+  @media (max-width: 500px) {
+    .testimage {
+      width: 100%; /* Set image width to 80% of the width for screens below 500px */
+    height: fit-content;  /*  Maintain aspect ratio */
+    }
+    .testimonial-content {
+        max-width: 90%; /* Full width for screens below 580px */
+        font-size: 0.9rem; /* Adjust content font size for smaller screens */
+      }
+  }
+
+  @media (max-width: 395px) {
+    .testimonial-content h2 {
+      font-size: 1.5rem; /* Adjust title font size for screens below 395px */
+    }
+  
+    .testimonial-content p {
+      font-size: 0.8rem; /* Adjust content font size for screens below 395px */
+    }
+  
+    .testimonial {
+      padding: 0.5rem; /* Adjust padding for testimonial for screens below 395px */
+    }
+    .testimage {
+        width: 100%; /* Set image width to 80% of the width for screens below 500px */
+      
+      }
+  }
+
+  @media (max-width: 385px) {
+    .testimonial-content h2 {
+      font-size: 1.2rem; /* Adjust title font size for screens below 395px */
+    }
+  
+    .testimonial-content p {
+      font-size: 0.7rem; /* Adjust content font size for screens below 395px */
+    }
+  
+    .testimonial {
+      padding: 0.2rem; /* Adjust padding for testimonial for screens below 395px */
+    }
+    .testimage {
+        width: 100%; /* Set image width to 80% of the width for screens below 500px */
+      height: max-content;
+      }
+  }

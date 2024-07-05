@@ -1,0 +1,26 @@
+.social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease-in-out;
+    font-size: xx-large;
+    margin-right: 10px; /* Add margin between icons */
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+  }
+  
+  .social-icons a:hover {
+    color: green;
+  }
+
+  .footer a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer a:hover{
+    text-decoration: underline;
+  }

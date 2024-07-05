@@ -1,0 +1,63 @@
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid black !important;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 2%;
+  }
+  
+  .learn-more-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+    background-color: rgb(0, 0, 0) !important;
+    color: white !important;
+  }
+  
+  /* Style for Form Label */
+.form-label {
+    color: #000000 !important; /* White color for form labels */
+  }
+  
+  /* Style for Form Control (textboxes) */
+  .form-control {
+    background-color: #ffffff !important; /* Black background color for textboxes */
+    border: 2px solid #000000 !important; /* Dark black border for textboxes */
+    color: #000000 !important; /* White color for text in textboxes */
+  }
+  
+  /* Style for the horizontal line below the Sign In button */
+  .hr-line {
+border-top: 1px solid #000000 !important; /* Dark black color for the horizontal line */
+  }
+  
+  .already-have-account-text a {
+    color: black !important; 
+    text-decoration: none;
+    font-style: bold;
+    font-weight: 600;
+  }
+
+  .form-check-input{
+    border-color: green !important;
+  }
+/* Add the following style for the checkbox */
+.form-check-input:checked {
+    background-color: green !important;
+    border-color: green !important;
+  }
+
+  span a{
+    color: #000000 !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: bold;
+  }
+
+  .already-have-account-text a:hover {
+    text-decoration: underline;
+  }
+  span a:hover{
+    text-decoration: underline;
+  }

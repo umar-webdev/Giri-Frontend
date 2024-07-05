@@ -1,0 +1,86 @@
+/* Statistics Section */
+.statistics {
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1656263969666-5af3107706b8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-position: center;
+    background-size: cover;
+    padding: 127px 0 120px;
+   
+        font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+        color: #fff;
+        text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+   
+}
+
+.statistics:before {
+    position: absolute;
+    content: '';
+    /* background: rgba(75, 75, 75, 0.60); */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Statistics Counter Container */
+.statistics-counter {
+    display: flex;
+    /* justify-content: space-between; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Single Statistics Box */
+.single-ststistics-box {
+    text-align: center;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+/* Statistics Content */
+.statistics-content {
+    /* font-family: 'Pacifico', 'sans-serif'!important; */
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.statistics-content span {
+    margin-left: 5px;
+}
+
+/* Heading inside Statistics Box */
+.single-ststistics-box h3 {
+    /* font-family: 'Proza Libre', sans-serif; */
+    color: #000000; /* Adjusted font color to pure white */
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+@media  only screen and (max-width: 353px) {
+
+    .statistics-counter {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: column;
+      }
+    
+}
+
+@media  only screen and (max-width: 575px) {
+
+    .statistics-counter {
+       
+        flex-direction: column;
+      }
+    
+}
+
